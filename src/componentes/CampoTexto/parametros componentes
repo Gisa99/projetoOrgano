@@ -1,0 +1,18 @@
+Componentes são iguais as funções, portanto podemos passar parâmetros. Exemplo: 
+
+const CampoTexto = (props) =>{
+    
+    return (
+        <div className="campo-texto">
+            <label>{props.label}</label>
+            <input placeholder={props.placeholder}/>
+        </div>
+    )
+
+}
+
+e dentro do arquivo que importamos o componente: 
+
+<CampoTexto label="Nome" placeholder="Digite seu nome"/>
+<CampoTexto label="Cargo" placeholder="Digite seu cargo"/>
+<CampoTexto label="Imagem" placeholder="Digite o endereço da imagem"/>
